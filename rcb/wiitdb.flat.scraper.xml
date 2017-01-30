@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<parserConfig>
+	<GameGrammar type="multiline">	
+		<SkippableContent skipTo="LineEnd">Id: </SkippableContent>
+		
+		<SkippableContent>Name: </SkippableContent>
+		<OriginalTitle restOfLine="true"></OriginalTitle>
+		<SkippableContent>Platform: </SkippableContent>
+		<Platform restOfLine="true"></Platform>
+		<SkippableContent>Region: </SkippableContent>
+		<Region restOfLine="true"></Region>
+		
+		<SkippableContent skipTo="LineEnd">Languages: </SkippableContent>
+		
+		<SkippableContent>Title: </SkippableContent>
+		<Game restOfLine="true"></Game>
+		<SkippableContent>Developer: </SkippableContent>
+		<Developer restOfLine="true"></Developer>
+		<SkippableContent>Publisher: </SkippableContent>
+		<Publisher restOfLine="true"></Publisher>
+		<SkippableContent>Release Year: </SkippableContent>
+		<ReleaseYear restOfLine="true"></ReleaseYear>
+		
+		<SkippableContent skipTo="LineEnd">Release Month: </SkippableContent>
+		<SkippableContent skipTo="LineEnd">Release Day: </SkippableContent>
+		
+		<SkippableContent>Genre: </SkippableContent>
+		<Genre delimiter="," restOfLine="true"></Genre>
+		<SkippableContent>Rating: </SkippableContent>
+		<Rating restOfLine="true"></Rating>
+		<SkippableContent>Players: </SkippableContent>
+		<Players restOfLine="true"></Players>
+		<SkippableContent>Controllers: </SkippableContent>
+		<Controller restOfLine="true"></Controller>
+		<SkippableContent>Description: </SkippableContent>
+		<Description skipTo="***EOF***"></Description>		
+	</GameGrammar>
+</parserConfig>
